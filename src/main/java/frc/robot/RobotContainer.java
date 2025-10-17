@@ -247,7 +247,7 @@ NamedCommands.registerCommand("Climb_Up", Commands.run(() -> {
       }));
 
 
-      OPController.povUp().onTrue(elevator.setHeightCommand(0.5));
+      // OPController.povUp().onTrue(elevator.setHeightCommand(0.5));
 
       // OPController.povRight().whileTrue(Commands.run(() -> {
       //   elevator.goToSetpoint(ElevatorConstants.ElevatorConfigs.Positions.Algae_1.getPos());
