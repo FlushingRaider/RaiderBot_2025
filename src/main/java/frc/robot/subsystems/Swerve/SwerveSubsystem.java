@@ -137,12 +137,12 @@ public class SwerveSubsystem extends SubsystemBase
     vision = new Vision(swerveDrive::getPose, swerveDrive.field);
   }
 
-  public boolean isMoving(double tolerance) {
-    return
-            (getRobotVelocity().omegaRadiansPerSecond +
-                    getRobotVelocity().vyMetersPerSecond +
-                    getRobotVelocity().vxMetersPerSecond) / 3 > tolerance;
-}
+//   public boolean isMoving(double tolerance) {
+//     return
+//             (getRobotVelocity().omegaRadiansPerSecond +
+//                     getRobotVelocity().vyMetersPerSecond +
+//                     getRobotVelocity().vxMetersPerSecond) / 3 > tolerance;
+// }
   @Override
   public void periodic()
   {
